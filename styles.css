@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Geo:ital@0;1&family=Goblin+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Geo:ital@0;1&family=Goblin+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#3c0d4f,#7462ff,#855395,#da85d0,#ca5d87,#bf298b,#741238,#3c0d4f,#7462ff,#855395,#da85d0,#ca5d87,#bf298b,#741238);
+    background-size: 300% 300%;
+    animation: color 15s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #205876;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 900px;
+    margin-left: -250px;
+    font-family: "Abril Fatface";
+    z-index: 1;
+}
+
+.relogio div{
+    height: 350px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee5e5;
+    margin-right: 40px;
+}
+
+#horas, #minutos, #segundos{
+    font-size: 300px;
+    margin-top: -200px;
+    letter-spacing: -10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.container-two{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+@media screen {
+    
+}
